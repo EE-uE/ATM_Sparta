@@ -1,0 +1,12 @@
+{
+    "userDatas": [
+        {
+            "UserID": "test",
+            "Password": "0000",
+            "UserName": "테스트",
+            "Balance": 0,
+            "Cash": 0,
+            "InLogin": false
+        }
+    ]
+}
