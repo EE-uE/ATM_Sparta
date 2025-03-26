@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,10 +14,12 @@ public class LoginController : MonoBehaviour
 
     public void Login()
     {
+        // 로그인한 유저 정보를 PlayerPrefs에 저장
         string id = UserID.text;
         PlayerPrefs.SetString("userid", id);
         string password = Password.text;
 
+        // 유저 데이터가 없으면 정보를 불러옴
         if (GameManager.Instance.users.Count == 0)
         {
             GameManager.Instance.LoadUsers();
@@ -37,11 +37,11 @@ public class LoginController : MonoBehaviour
             string jsonData = File.ReadAllText(path);
             UserDataList userDataList = JsonUtility.FromJson<UserDataList>(jsonData);
 
+            // 입력한 정보와 일치하는 유저 찾기
             UserData userData = userDataList.userDatas.Find(userData => userData.UserID == id && userData.Password == password);
 
             if (userData != null)
             {
-                //GameManager.Instance.LoadUserData(id);
                 OnLoginSuccess();  // 로그인 성공 처리
             }
             else
@@ -56,6 +56,7 @@ public class LoginController : MonoBehaviour
         SceneManager.LoadScene("MainScene");
     }
 
+    // 회원가입 
     public void OnSignUpObjBtn()
     {
         SignUpObj.SetActive(true);

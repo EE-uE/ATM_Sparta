@@ -14,6 +14,7 @@ public class SignupController : MonoBehaviour
 
     public Text SignMessage;
 
+    // 회원가입
     public void SignUp()
     {
         // 아이디생성
@@ -46,8 +47,10 @@ public class SignupController : MonoBehaviour
         SignMessage.text = "회원가입이 완료되었습니다.";
     }
 
+    // 회원가입 등록
     public void SignUpSuccess()
     {
+        // 초기값, 금액은 0, 0
         UserData userData = new UserData(UserID.text, Password.text, UserName.text, 0, 0);
 
         string path = Path.Combine(Application.dataPath, "SaveData", $"{userData.UserID}.json");

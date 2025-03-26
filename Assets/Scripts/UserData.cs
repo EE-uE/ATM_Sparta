@@ -1,8 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 [System.Serializable]
 public class UserData
@@ -12,7 +8,6 @@ public class UserData
     public string UserName;
     public int Balance;
     public int Cash;
-    public bool InLogin;
 
     public UserData(string userID, string password, string username, int balance, int cash)
     {
@@ -21,7 +16,6 @@ public class UserData
         UserName = username;    // 이름
         Cash = cash;            // 현금
         Balance = balance;      // 잔고
-        InLogin = false;        // 로그인되지 않음
     }
 }
 

@@ -7,9 +7,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public UserData userData;                               // 현재 사용자 정보
-    public List<UserData> users = new List<UserData>();     // 여러 사용자 저장
+    public List<UserData> users = new List<UserData>();     // 여러 사용자 정보
 
-    string userPath; // 사용자 목록 지정 경로, 여러명으로 인해 path는 삭제
+    string userPath; // 사용자 목록 지정 경로
 
     private void Awake()
     {

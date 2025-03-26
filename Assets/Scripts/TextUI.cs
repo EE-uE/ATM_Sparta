@@ -11,11 +11,10 @@ public class TextUI : MonoBehaviour
 
     public void Start()
     {
-        //SaveManager.LoadUserData();
-        //GameManager.Instance.textUI = this;
         Refresh();
     }
 
+    // UI 업데이트
     public void Refresh()
     {
         if (GameManager.Instance.userData != null)

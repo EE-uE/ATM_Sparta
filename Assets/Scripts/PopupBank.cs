@@ -1,10 +1,6 @@
-using System.Collections.Generic;
 using System.IO;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Experimental.GraphView.GraphView;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class PopupBank : MonoBehaviour
 {
@@ -51,10 +47,13 @@ public class PopupBank : MonoBehaviour
         Remittance.SetActive(false);
     }
 
+    // 입금
     public void DepositMoney(int amount)
     {
+        // amount가 0일때 infutfield에서 읽어옴
         if (amount == 0)
         {
+            // 이 내용이 밖에 있을 경우 금액 버튼 부분에서 null 발생
             string inputText = inputDeposit.text.Trim();
             if (int.TryParse(inputText, out int parsedAmount))
             {
@@ -76,6 +75,7 @@ public class PopupBank : MonoBehaviour
         textUI.Refresh();
     }
 
+    // 출금
     public void WithdrawMoney(int amount)
     {
         if (amount == 0)
@@ -100,6 +100,7 @@ public class PopupBank : MonoBehaviour
         textUI.Refresh();
     }
 
+    // 송금
     public void RemInputMoney()
     {
         string inputName = inputRemname.text.Trim(); // 송금대상
@@ -155,6 +156,7 @@ public class PopupBank : MonoBehaviour
         textUI.Refresh();
     }
 
+    // 유저 불러오기
     private void SaveUserDataList(UserDataList userDataList, string filePath)
     {
         string json = JsonUtility.ToJson(userDataList, true);
