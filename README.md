@@ -37,7 +37,8 @@ ID, PW 입력 후 로그인 버튼을 클릭하면 입력된 사용자 정보를
 
 정보가 없을 시 SIGN UP 버튼을 통해 회원가입 가능
 
-![image.png](attachment:b96e0032-9a45-4210-b793-359f3502e09d:image.png)
+![image](https://github.com/user-attachments/assets/be79a1cd-a1d8-41f5-bde1-e1e7cdc725a9)
+
 
 **회원가입** 
 
@@ -45,21 +46,23 @@ ID, PW 입력 후 로그인 버튼을 클릭하면 입력된 사용자 정보를
 
 회원가입이 정상적으로 완료되었을 경우 “회원가입이 완료되었습니다.” 메세지 출력 및 완료
 
-![image.png](attachment:60aeb06e-c2c3-44cf-afff-398c9346992e:image.png)
+![image](https://github.com/user-attachments/assets/2bb79365-5aa1-4926-99e4-817172470ecb)
 
-![image.png](attachment:1624a7f2-0b74-4026-9369-644d63685005:image.png)
+![image](https://github.com/user-attachments/assets/5258e694-7606-4c22-9e49-af08e2d3f25c)
+
 
 **메인화면**
 
 현금 및 계좌 잔고 확인이 가능하며 입/출/송금 버튼을 통해 원하는 내용 실행
 
-![image.png](attachment:efb26521-3d9e-4124-9ec2-04099ca2dee7:image.png)
+![image](https://github.com/user-attachments/assets/6cb4c2fc-613b-455d-9916-2d479ee2c7bb)
 
 **입/출금**
 
 원하는 금액 버튼 입력 혹은 직접 입력칸에 원하는 금액을 기재 후 입/출금 버튼을 누르면 실시간으로 잔액 변동 UI로 확인 가능
 
-![image.png](attachment:c09248c4-ad09-43be-94c3-783a4f17974b:image.png)
+![image](https://github.com/user-attachments/assets/e10234bc-1ae0-4735-8c6e-4a7f7992aaa1)
+
 
 **송금**
 
@@ -67,12 +70,15 @@ ID, PW 입력 후 로그인 버튼을 클릭하면 입력된 사용자 정보를
 
 잔액부족 및 송금대상이 없을 경우 에러 메세지 출력
 
-![image.png](attachment:e4aa6d25-dae1-42e4-9177-c625b3fa3c29:image.png)
+![image](https://github.com/user-attachments/assets/d658519e-e1ec-4907-bffa-091fb1d104fd)
+
+
 
 각 상황에 맞는 메세지 출력
 
-![image.png](attachment:eb3035c3-71d6-4c0f-b580-641ed53e75a0:image.png)
+![image](https://github.com/user-attachments/assets/c4a9a02a-60a9-45d1-bddd-b0bd4f961453)
 
-![image.png](attachment:01ce57f5-cd5b-4331-9dd5-e38888fffbf5:image.png)
+![image](https://github.com/user-attachments/assets/9960a2a3-87e1-4b7a-ada2-d2bda63144f3)
 
-![image.png](attachment:b0770e3c-2523-4765-9d6a-c7625e3d8115:image.png)
+![image](https://github.com/user-attachments/assets/35aec9e4-b774-4a41-a9a4-314c46465786)
+
